@@ -1,0 +1,69 @@
+﻿:root {
+  --bg: #0b0f14;
+  --panel: #121925;
+  --text: #e9eef6;
+  --muted: rgba(233, 238, 246, 0.75);
+  --accent: #ffd54a;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(255, 213, 74, 0.10), transparent 60%),
+              radial-gradient(1000px 600px at 90% 10%, rgba(120, 170, 255, 0.12), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+h1, h2, h3 {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.nav-custom {
+  background: rgba(10, 14, 20, 0.8);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.hero {
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(18, 25, 37, 0.8), rgba(18, 25, 37, 0.15));
+}
+
+.panel {
+  background: rgba(18, 25, 37, 0.85);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.25rem;   /* padding requirement */
+  margin: 0.25rem;    /* margin requirement */
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+.section-title {
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.section-subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0;
+  margin-bottom: 0.75rem;
+}
+
+.media {
+  border: 1px solid var(--border);
+  margin-bottom: 0.75rem;
+}
+
+.credit {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer-custom {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
