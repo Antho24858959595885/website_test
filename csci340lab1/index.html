@@ -1,48 +1,126 @@
-﻿<!doctype html>
+﻿cd $HOME\website_test
+Set-Content -Encoding UTF8 -Path .\csci340lab1\index.html -Value @'
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CSCI 340 Lab 1</title>
+  <title>Helldivers Lab: Bile Titan • Charger • Automaton Hulk</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="py-5">
+  <nav class="navbar navbar-expand-lg navbar-dark nav-custom">
     <div class="container">
-      <h1 class="display-6">CSCI 340 Lab 1</h1>
-      <p class="lead mb-0">Starter page is live ✅</p>
+      <a class="navbar-brand" href="#">CSCI 340 • Lab 1</a>
+      <span class="navbar-text small text-light-emphasis">For Super Earth (but make it HTML + CSS)</span>
+    </div>
+  </nav>
+
+  <header class="hero py-5">
+    <div class="container">
+      <h1 class="display-5 mb-2">Bile Titan • Charger • Automaton Hulk</h1>
+      <p class="lead mb-0">
+        This website is inspired by three Helldivers enemy nouns. Since the enemies themselves are copyrighted,
+        I’m using public-domain real-life stand-ins to capture the vibe (not game screenshots).
+      </p>
     </div>
   </header>
 
-  <main class="container py-4">
+  <main class="container my-4">
+    <section class="panel mb-4">
+      <h2 class="section-title">Mission Checklist</h2>
+      <h3 class="section-subtitle">What this page includes</h3>
+      <ul class="mb-0">
+        <li>Bootstrap layout (container, rows, columns)</li>
+        <li>Three images with credits + usage rights</li>
+        <li>Multiple heading levels (h1, h2, h3)</li>
+        <li>Custom CSS colors + spacing (padding + margins)</li>
+      </ul>
+    </section>
+
     <div class="row g-4">
-      <div class="col-12 col-md-6">
-        <div class="box">
-          <h2>Next</h2>
-          <ul>
-            <li>Add your 3 random nouns</li>
-            <li>Add 3 properly-licensed images</li>
-            <li>Style with CSS + Bootstrap</li>
-          </ul>
+      <div class="col-12 col-md-4">
+        <div class="panel h-100">
+          <h2 class="section-title">Bile Titan</h2>
+          <h3 class="section-subtitle">Threat Profile</h3>
+          <p class="mb-3">
+            A “Bile Titan” is basically a giant walking problem. For the vibe, I’m using a public-domain image of larvae
+            clustering in water—gross, swarmy, and very “Terminid.”
+          </p>
+
+          <img class="img-fluid rounded media"
+               src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Close-up_of_Culex_mosquito_larvae_in_water.jpg"
+               alt="Mosquito larvae in water (public domain)" />
+
+          <p class="credit mb-0">
+            Image credit: CDC / James Gathany — Public domain (U.S. federal government work). Source: Wikimedia Commons.
+          </p>
         </div>
       </div>
-      <div class="col-12 col-md-6">
-        <div class="box">
-          <h2>Your Lab URL</h2>
-          <p>When Pages is enabled, this folder will be here:</p>
-          <p><code>https://YOURUSERNAME.github.io/website_test/csci340lab1/</code></p>
+
+      <div class="col-12 col-md-4">
+        <div class="panel h-100">
+          <h2 class="section-title">Charger</h2>
+          <h3 class="section-subtitle">Behavior</h3>
+          <p class="mb-3">
+            Chargers are armored and relentless. This beetle photo feels like “natural armor” — it’s not a Charger from
+            the game, but it sells the idea with a real creature.
+          </p>
+
+          <img class="img-fluid rounded media"
+               src="https://upload.wikimedia.org/wikipedia/commons/d/da/Tribolium_castaneum.jpg"
+               alt="Beetle close-up (public domain)" />
+
+          <p class="credit mb-0">
+            Image credit: Peggy Greb (USDA Agricultural Research Service) — Public domain. Source: Wikimedia Commons.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="panel h-100">
+          <h2 class="section-title">Automaton Hulk</h2>
+          <h3 class="section-subtitle">Why It’s Scary</h3>
+          <p class="mb-3">
+            Automatons are “metal + mission.” For a Hulk-style heavy unit vibe, I’m using a public-domain military
+            vehicle photo to represent unstoppable mechanical force.
+          </p>
+
+          <img class="img-fluid rounded media"
+               src="https://upload.wikimedia.org/wikipedia/commons/8/86/M1A1_abrams_front.jpg"
+               alt="M1A1 Abrams tank front view (public domain)" />
+
+          <p class="credit mb-0">
+            Image credit: U.S. Air Force photo by Tech Sgt John Houghton — Public domain (U.S. federal government work). Source: Wikimedia Commons.
+          </p>
         </div>
       </div>
     </div>
+
+    <section class="panel mt-4">
+      <h2 class="section-title">Credits</h2>
+      <p class="mb-0">
+        1) CDC / James Gathany — Public domain (mosquito larvae).<br>
+        2) Peggy Greb (USDA ARS) — Public domain (beetle).<br>
+        3) U.S. Air Force photo by Tech Sgt John Houghton — Public domain (tank).
+      </p>
+    </section>
   </main>
+
+  <footer class="py-4 text-center footer-custom">
+    <div class="container">
+      <p class="mb-0">CSCI 340 • Lab 1 • Bootstrap + Google Fonts + CSS</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+'@
